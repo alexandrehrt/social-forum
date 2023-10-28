@@ -2,4 +2,10 @@
   import '../app.postcss';
 </script>
 
-<slot />
+<main class="bg-background">
+  <div
+    class="relative flex flex-col max-w-[1400px] mx-auto w-full text-sm md:text-base min-h-screen"
+  >
+    <slot />
+  </div>
+</main>

@@ -1,6 +1,6 @@
 export const actions = {
   default: async ({ request }) => {
-    const formData = await request.formData();
+    const formData = Object.fromEntries(await request.formData());
     console.log('formData: ', formData);
   }
 };
